@@ -31,13 +31,7 @@ void computehistogram(char*,histogram*,list*);
 void main()
 {	
 	point *ptr=(point *)malloc(2*sizeof(point));
-	int j=0;
-	int i;
-	int k;
-	int l;
-	int t;
-	int spam=0;
-	int ham=0;
+	int j=0, i, k, l, t, spam=0, ham=0;
 	char* message=(char*)malloc(2*sizeof(char));
 	FILE *fp=fopen("english.txt","r");
 	if(fp==NULL)
